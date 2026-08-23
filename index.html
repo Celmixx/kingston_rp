@@ -184,11 +184,35 @@
             margin-bottom: 40px;
         }
 
+        .bg-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin: 25px 0 10px 0;
+            font-size: 1.25rem;
+        }
+
+        .bg-card h3:first-child {
+            margin-top: 0;
+        }
+
         .bg-card p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #CCC;
+        }
+
+        .bg-card ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        .bg-card ul li {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #CCC;
+            margin-bottom: 10px;
         }
 
         .grid-2 {
@@ -321,7 +345,6 @@
     <!-- NAVBAR -->
     <nav>
         <div class="brand-container">
-            <!-- Remplace Kingston/Clan.png par le chemin vers ton image de logo -->
             <img src="Kingston/Clan.png" alt="Logo Kingston" class="nav-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-icon').style.display='inline-block';">
             <i id="nav-fallback-icon" class="fa-solid fa-shield-halved icon-logo" style="display:none; font-size: 1.5rem; margin-right: 5px;"></i>
             <span class="logo-text">KINGSTON</span>
@@ -335,7 +358,6 @@
 
     <!-- HERO SECTION -->
     <header>
-        <!-- Logo principal au centre de l'accueil -->
         <img src="Kingston/Clan.png" alt="Logo Famille Kingston" class="hero-logo reveal" onerror="this.style.display='none'; document.getElementById('hero-fallback-icon').style.display='block';">
         <i id="hero-fallback-icon" class="fa-solid fa-shield-halved icon-logo reveal" style="display:none; font-size: 5rem; margin-bottom: 20px;"></i>
 
@@ -348,12 +370,31 @@
     <section id="about">
         <h2 class="section-title reveal">Background du Groupe</h2>
         <div class="bg-card reveal">
-            <p>
-                Issus des quartiers brumeux et industriels de Londres, les frères Kingston y ont bâti leur premier empire dans l'ombre. Après la perte tragique de leur frère Johnny, la fratrie a traversé l'Atlantique pour implanter son syndicat en Amérique.
-            </p>
-            <p>
-                Désormais installée aux docks de Saint-Denis, la Famille Kingston incarne l'élégance britannique alliée à la rigueur des affaires. Sous leurs costumes trois pièces et leurs manières distinguées, ils mènent leurs activités civiles et commerciales avec une discipline de fer, guidés par la volonté d'imposer leur influence sur toute la région.
-            </p>
+            <h3>I. L'Origine Britannique : L'Ombre de Londres</h3>
+            <p>Dans la brume et la suie des quartiers industriels de Londres, les frères Kingston s'étaient taillé un véritable empire criminel. Mais la violence de cet univers a fini par leur coûter cher : la mort tragique de Johnny Kingston a brisé l'équilibre de la fratrie. Refusant de couler avec leurs souvenirs, Arthur Kingston et son jeune frère Elias ont choisi de traverser l'Atlantique pour exporter leur syndicat et bâtir un nouveau royaume en Amérique.</p>
+
+            <h3>II. Elias Kingston : Le Négociateur de l'Ombre</h3>
+            <p>Elias Kingston est né dans les quartiers pauvres de Londres, au sein d’une famille où la criminalité faisait partie du quotidien. Après l’assassinat de son frère Johnny lors d’une guerre de gangs, Elias participa à la vengeance des Kingston, forçant finalement la famille à fuir l’Angleterre pour échapper aux autorités.</p>
+            <p>Installé à Saint-Denis, Elias découvre rapidement le potentiel des docks, du commerce clandestin et de la corruption. Grâce à son calme et son sens de la négociation, il se forge un réseau auprès des commerçants, contrebandiers et hommes influents de la ville.</p>
+            <p>Aujourd’hui, Elias est l’un des hommes clés des Kingston : il développe leurs affaires, négocie leurs alliances et règle discrètement les problèmes que les hommes de main ne peuvent pas résoudre.</p>
+
+            <h3>III. La Rencontre au Texas : L'Alliance du Sang et du Fer</h3>
+            <p>Arrivés dans un Nouveau Monde sauvage et sans pitié, les Kingston avaient le capital et la vision, mais il leur manquait une force de frappe locale capable de s'imposer sur le terrain. C'est au cœur de la misère poussiéreuse du Texas qu'il croise la route d'un groupe de survivants locaux.</p>
+            <p>Ayant grandi dans la rue en bravant la faim et la poudre, la fratrie Harper — menée par l'aîné John, épaulé par le téméraire Harry, le solide William et le jeune Jack — forme un bloc inébranlable avec leur ami d'enfance et frère d'armes, John Smith.</p>
+
+            <h3>IV. La Création de la Cellule d'Élite</h3>
+            <p>Comprenant immédiatement l'opportunité mutuelle, la jonction s'opère :</p>
+            <ul>
+                <li><strong>La condition de John Harper :</strong> En leader naturel de son clan, John exige de ne jamais séparer sa famille. Il présente sa meute aux Kingston comme l'outil ultime pour conquérir ce territoire.</li>
+                <li><strong>Le rôle de John Smith :</strong> Lié par un cousinage/lien familial avec Kingston et une loyauté absolue envers les Harper, John Smith sert de pont de confiance entre l'ambition londonienne d'Arthur et Elias et la poigne texane des Harper.</li>
+            </ul>
+
+            <h3>V. Le Syndicat Aujourd'hui</h3>
+            <p>En combinant l'organisation méthodique des Britanniques et la férocité tactique de la cellule d'élite texane, l'organisation d'Arthur Kingston est désormais parée pour régner. Sous le commandement direct de John Harper sur le terrain et la finesse diplomatique d'Elias en coulisses, cette alliance d'acier et de poussière est prête à tout pour écraser la concurrence et ne plus jamais se laisser dicter sa loi.</p>
+
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 25px 0;">
+
+            <p>Désormais installée aux docks de Saint-Denis, la Famille Kingston incarne l'élégance britannique alliée à la rigueur des affaires. Sous leurs costumes trois pièces et leurs manières distinguées, ils mènent leurs activités civiles et commerciales avec une discipline de fer, guidés par la volonté d'imposer leur influence sur toute la région.</p>
         </div>
 
         <div class="grid-2 reveal">
@@ -387,10 +428,19 @@
             </div>
 
             <div class="member-card">
+                <img src="Kingston/Elias_Kingston.png" alt="Elias Kingston" class="avatar" onerror="this.src='https://via.placeholder.com/80/141414/D4AF37?text=EK'">
+                <div class="member-info">
+                    <h3>Elias Kingston</h3>
+                    <div class="role">Petit Frère</div>
+                    <p>Suis son grand frère et participe aux décisions stratégiques de la famille.</p>
+                </div>
+            </div>
+
+            <div class="member-card">
                 <img src="Kingston/John_Harper.png" alt="John Harper" class="avatar" onerror="this.src='https://via.placeholder.com/80/141414/D4AF37?text=JH'">
                 <div class="member-info">
                     <h3>John Harper</h3>
-                    <div class="role">Bras Droit</div>
+                    <div class="role">Bras Droit & Chef de Terrain</div>
                     <p>Responsable de la sécurité des membres, de la discipline interne et du terrain.</p>
                 </div>
             </div>
@@ -401,15 +451,6 @@
                     <h3>John Smith</h3>
                     <div class="role">Directeur des Finances</div>
                     <p>Gère la trésorerie, la comptabilité des affaires et le blanchiment des capitaux.</p>
-                </div>
-            </div>
-
-            <div class="member-card">
-                <img src="Kingston/Elias_Kingston.png" alt="Elias Kingston" class="avatar" onerror="this.src='https://via.placeholder.com/80/141414/D4AF37?text=EK'">
-                <div class="member-info">
-                    <h3>Elias Kingston</h3>
-                    <div class="role">Sécurité & Exécution</div>
-                    <p>Chargé de la protection du domaine, du respect de l'Omertà et des opérations.</p>
                 </div>
             </div>
 
